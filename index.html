@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palatable Pizza - Authentic Italian Experience</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+     <!-- Preloader  -->
+    <div class="preloader">
+        <div class="pizza-loader">
+            <div class="pizza-slice"></div>
+            <div class="pizza-slice"></div>
+            <div class="pizza-slice"></div>
+            <div class="pizza-slice"></div>
+            <div class="pizza-slice"></div>
+            <div class="pizza-slice"></div>
+        </div>
+        <h3>Crafting your experience...</h3>
+    </div>
+
+     <!-- Navigation  -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <div class="logo-icon">
+                    <i class="fas fa-pizza-slice"></i>
+                </div>
+                <div class="brand-text">
+                    <h2>Palatable Pizza</h2>
+                    <span>Authentic Italian</span>
+                </div>
+            </div>
+            
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+               
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="cart-icon" id="cart-toggle">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+                <button class="btn-order" id="order-btn">Order Now</button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+     <!-- Cart Sidebar  -->
+    <div class="cart-sidebar" id="cart-sidebar">
+        <div class="cart-header">
+            <h3>Your Order</h3>
+            <button class="cart-close" id="cart-close">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="empty-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total: $<span id="cart-total">0.00</span></span>
+            </div>
+            <button class="btn-checkout" id="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+     <!-- Intro Screen  -->
+    <div id="intro">
+        <h1 class="intro-title">Palatable <span>Pizza</span></h1>
+        <p class="intro-tagline">Deliciously Crafted, Fresh Every Time</p>
+    </div>
+
+     <!-- Main Hero Section  -->
+    <section id="home" class="hero" style="display:none;">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <video autoplay muted loop class="hero-video">
+                <source src="videoplayback (8).mp4" type="video/mp4">
+            </video>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-text">
+                <!-- <span class="hero-subtitle">Authentic Italian Since 1952</span> -->
+                <h1 class="hero-title">
+                    <span class="title-word">Crafted</span>
+                    <span class="title-word">with</span>
+                    <span class="title-word">Passion</span>
+                </h1>
+                <!-- <p class="hero-description">Experience the finest Italian pizzas made with traditional recipes, premium ingredients, and wood-fired perfection.</p> -->
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" id="explore-menu">
+                        <span>Explore Menu</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                    <button class="btn btn-secondary" id="watch-story">
+                        <i class="fas fa-play"></i>
+                        <span>Our Story</span>
+                    </button>
+                </div>
+            </div>
+            
+           
+        </div>
+
+        <div class="hero-stats">
+            <div class="stat-item">
+                <div class="stat-number" data-target="70">0</div>
+                <div class="stat-label">Years of Excellence</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="50000">0</div>
+                <div class="stat-label">Happy Customers</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" data-target="25">0</div>
+                <div class="stat-label">Pizza Varieties</div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Advertisement Section  -->
+    <section id="advertisement" class="advertisement">
+        <div class="container">
+            <div class="advertisement-content">
+                <div class="advertisement-text">
+                    <span class="section-subtitle">Discover More</span>
+                    <h2 class="section-title">Why Choose Palatable Pizza?</h2>
+                    <p class="advertisement-description">
+                        At Palatable Pizza, we're more than just a pizzeria; we're a culinary journey. Our commitment to authentic Italian traditions, combined with a passion for innovation, ensures every bite is an unforgettable experience. From our hand-stretched dough to the freshest, locally-sourced toppings, we craft perfection.
+                    </p>
+                    <ul class="advertisement-points">
+                        <li><i class="fas fa-check-circle"></i> Authentic Wood-Fired Taste</li>
+                        <li><i class="fas fa-check-circle"></i> Premium, Fresh Ingredients Daily</li>
+                        <li><i class="fas fa-check-circle"></i> Family Recipes Passed Down Generations</li>
+                        <li><i class="fas fa-check-circle"></i> Exceptional Customer Service</li>
+                    </ul>
+                    <button class="btn btn-primary">
+                        <span>Learn Our Story</span>
+                        <i class="fas fa-book-open"></i>
+                    </button>
+                </div>
+                <div class="advertisement-visual">
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza Advertisement" class="advertisement-image">
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Menu Section  -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Specialties</span>
+                <h2 class="section-title">Signature Pizzas</h2>
+                <p class="section-description">Each pizza is a masterpiece, crafted with the finest ingredients and baked to perfection in our wood-fired ovens.</p>
+            </div>
+
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Pizzas</button>
+                <button class="filter-btn" data-filter="classic">Classic</button>
+                <button class="filter-btn" data-filter="premium">Premium</button>
+                <button class="filter-btn" data-filter="vegan">Vegan</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-card" data-category="classic">
+                    <div class="card-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1733306588881-0411931d4fed?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Margherita Supreme">
+                        <div class="card-overlay">
+                            <button class="btn-add-cart" data-name="Margherita Supreme" data-price="24.99">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card-badge">Bestseller</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Margherita Supreme</h3>
+                            <span class="price">$24.99</span>
+                        </div>
+                        <p class="card-description">San Marzano tomatoes, fresh mozzarella di bufala, basil, extra virgin olive oil</p>
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9 (127 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="premium">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1534308983496-4fabb1a015ee?q=80&w=1476&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Truffle Deluxe">
+                        <div class="card-overlay">
+                            <button class="btn-add-cart" data-name="Truffle Deluxe" data-price="42.99">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card-badge premium">Premium</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Truffle Deluxe</h3>
+                            <span class="price">$42.99</span>
+                        </div>
+                        <p class="card-description">Black truffle, wild mushrooms, fontina cheese, arugula, truffle oil</p>
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.8 (89 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="classic">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1634629377376-6c6bae2d8bcf?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pepperoni Classico">
+                        <div class="card-overlay">
+                            <button class="btn-add-cart" data-name="Pepperoni Classico" data-price="28.99">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Pepperoni Classico</h3>
+                            <span class="price">$28.99</span>
+                        </div>
+                        <p class="card-description">Premium pepperoni, mozzarella, tomato sauce, oregano</p>
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.7 (203 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="premium">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1634629377376-6c6bae2d8bcf?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Quattro Formaggi">
+                        <div class="card-overlay">
+                            <button class="btn-add-cart" data-name="Quattro Formaggi" data-price="32.99">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Quattro Formaggi</h3>
+                            <span class="price">$32.99</span>
+                        </div>
+                        <p class="card-description">Gorgonzola, parmesan, mozzarella, fontina, honey drizzle</p>
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.9 (156 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="vegan">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1688149825046-2f01dbcd90ad?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Garden Fresh">
+                        <div class="card-overlay">
+                            <button class="btn-add-cart" data-name="Garden Fresh" data-price="26.99">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card-badge vegan">Vegan</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Garden Fresh</h3>
+                            <span class="price">$26.99</span>
+                        </div>
+                        <p class="card-description">Vegan cheese, roasted vegetables, spinach, sun-dried tomatoes</p>
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.6 (94 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-card" data-category="premium">
+                    <div class="card-image">
+                        <img src="https://images.unsplash.com/photo-1655673654158-9f7285b7d1ea?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Prosciutto & Fig">
+                        <div class="card-overlay">
+                            <button class="btn-add-cart" data-name="Prosciutto & Fig" data-price="38.99">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                        <div class="card-badge premium">Premium</div>
+                    </div>
+                    <div class="card-content">
+                        <div class="card-header">
+                            <h3>Prosciutto & Fig</h3>
+                            <span class="price">$38.99</span>
+                        </div>
+                        <p class="card-description">Prosciutto di Parma, fresh figs, goat cheese, arugula, balsamic glaze</p>
+                        <div class="card-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-text">4.8 (112 reviews)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- About Section  -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <span class="section-subtitle">Our Heritage</span>
+                    <h2 class="section-title">Three Generations of Excellence</h2>
+                    <p class="about-description">
+                        Founded in 1952 by Giuseppe Rossi in the heart of Naples, Palatable Pizza has been serving authentic Italian cuisine for over seven decades. Our family recipes, passed down through three generations, combine traditional techniques with the finest ingredients.
+                    </p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-fire"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Wood-Fired Ovens</h4>
+                                <p>Authentic Neapolitan ovens imported directly from Italy</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Fresh Ingredients</h4>
+                                <p>Daily sourced premium ingredients from local farms</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Award Winning</h4>
+                                <p>Recognized by Michelin Guide and local food critics</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-main">
+                        <img src="https://images.unsplash.com/photo-1613564834361-9436948817d1?q=80&w=1943&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza Chef">
+                    </div>
+                    <div class="about-image-small">
+                        <img src="https://images.unsplash.com/photo-1677175183792-e6a9b8b14305?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Wood Fired Oven">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Gallery Section  -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Visual Experience</span>
+                <h2 class="section-title">Gallery</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1655673654158-9f7285b7d1ea?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza Making">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1571407970349-bc81e7e96d47?q=80&w=1025&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Restaurant Interior">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1626803774112-8288cfa441b6?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fresh Ingredients">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1555420460-ca0b82023f95?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Pizza Slice">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-search-plus"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Contact Section  -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <span class="section-subtitle">Get In Touch</span>
+                    <h2 class="section-title">Visit Us Today</h2>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Location</h4>
+                                <p>bustand market shaktinagar<br>shonbhadra UP INDIA</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>+918815262631<br>+918815262631</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Hours</h4>
+                                <p>Mon-Thu: 11:00 AM - 10:00 PM<br>Fri-Sun: 11:00 AM - 11:00 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                                <label for="email">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                            <label for="phone">Your Phone</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Footer  -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <i class="fas fa-pizza-slice"></i>
+                        </div>
+                        <div class="brand-text">
+                            <h3>Palatable Pizza</h3>
+                            <span>Authentic Italian</span>
+                        </div>
+                    </div>
+                    <p>Experience authentic Italian cuisine crafted with passion and served with pride since 1952.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#menu">Menu</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Dine In</a></li>
+                            <li><a href="#">Takeaway</a></li>
+                            <li><a href="#">Delivery</a></li>
+                            <li><a href="#">Catering</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li>shaktinagar shonbhadra UP</li>
+                            <li>bustand 231222</li>
+                            <li>+918815262631</li>
+                            <li>info@palatablepizza.com</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Palatable Pizza. All rights reserved. | Designed with ❤️ for pizza lovers By Mr.Dev</p>
+            </div>
+        </div>
+    </footer>
+
+     <!-- Modal for Order Success  -->
+    <div class="modal" id="success-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Order Placed Successfully!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Thank you for your order. We'll prepare your delicious pizza with love and have it ready soon!</p>
+                <div class="order-details" id="order-details"></div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="close-modal">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+     <!-- Scripts  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/TextPlugin.min.js"></script>
+     <!-- ADD THIS LINE FOR SCROLLTO PLUGIN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
